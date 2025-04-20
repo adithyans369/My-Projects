@@ -22,6 +22,16 @@ This is perfect for beginners looking to explore reinforcement learning in games
 
 ---
 
+tictactoe2/
+│
+├── app.py               # Streamlit frontend
+├── train.py             # Training script for Q-learning agent
+├── agent.py             # Q-learning agent logic
+├── tictactoe_env.py     # Game environment & logic
+├── q_table.npy          # Generated after training (Q-values)
+└── README.md            # This file
+
+
 ## ✨ Features
 
 - ✅ Q-learning agent trained through self-play
@@ -47,3 +57,7 @@ This is perfect for beginners looking to explore reinforcement learning in games
 ```bash
 git clone https://github.com/your-username/tic-tac-toe-rl.git
 cd tic-tac-toe-rl
+
+python3 train.py
+streamlit run app.py
+
